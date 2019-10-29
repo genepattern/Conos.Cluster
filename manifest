@@ -1,0 +1,140 @@
+#Conos.Cluster
+#Wed Oct 23 18:50:29 UTC 2019
+JVMLevel=
+LSID=urn\:lsid\:8080.gpserver.ip-172-31-26-71.ip-172-31-26-71.ec2.internal\:genepatternmodules\:95\:0.9
+author=Edwin F. Juarez & Anthony Castanza;UCSD -- Mesirov Lab
+categories=Clustering;SingleCell
+
+commandLine=Rscript /module/run_conos_cluster.R --conos_object <conos_object> --runleiden <runleiden> --leiden_resolution <leiden_resolution> --runwalktrap <runwalktrap> --walktrap_steps <walktrap_steps> --umap_distance <umap_distance> --umap_spread <umap_spread>
+
+#conos_object file [.rds]
+#runleiden charBool
+#leiden_resolution double
+#runwalktrap charBool
+#walktrap_steps int
+#umap_distance double
+#umap_spread double
+
+cpuType=any
+description=GenePattern Module which implements the clustering and embedding steps of Conos
+fileFormat=png;txt;rds
+
+job.docker.image=genepattern/conos\:1.2
+job.memory=4Gb
+job.cpuCount=3
+
+language=R
+name=Conos.Preprocess
+os=any
+
+#conos_object file [.rds]
+p1_MODE=IN
+p1_TYPE=FILE
+p1_default_value=
+p1_description=Conos object created by Conos.Preprocess.
+p1_fileFormat=rds
+p1_flag=--conos_object
+p1_name=conos_object
+p1_numValues=1
+p1_optional=
+p1_prefix=
+p1_prefix_when_specified=
+p1_type=java.io.File
+p1_value=
+
+#runleiden charBool
+p2_MODE=
+p2_TYPE=TEXT
+p2_default_value=True
+p2_description=Whether or not to run Leiden community clustering
+p2_fileFormat=
+p2_flag=--runleiden
+p2_name=runleiden
+p2_numValues=0..1
+p2_optional=
+p2_prefix=
+p2_prefix_when_specified=
+p2_type=java.lang.String
+p2_value=True\=True;False\=False
+
+#leiden_resolution double
+p3_MODE=
+p3_TYPE=Floating Point
+p3_default_value=1.0
+p3_description=Resolution for Leiden Community Clustering (default:1). Generally best performance is achieved  with a resolution between 1 and 2
+p3_fileFormat=
+p3_flag=--leiden_resolution
+p3_name=leiden_resolution
+p3_numValues=0..1
+p3_optional=
+p3_prefix=
+p3_prefix_when_specified=
+p3_type=java.lang.Float
+p3_value=
+
+#runwalktrap charBool
+p4_MODE=
+p4_TYPE=TEXT
+p4_default_value=True
+p4_description=Whether or not to perform runwalktrap community clustering
+p4_fileFormat=
+p4_flag=--runwalktrap
+p4_name=runwalktrap
+p4_numValues=0..1
+p4_optional=
+p4_prefix=
+p4_prefix_when_specified=
+p4_type=java.lang.String
+p4_value=True\=True;False\=False
+
+#walktrap_steps int
+p5_MODE=
+p5_TYPE=Integer
+p5_default_value=10
+p5_description=Stepts to be taken for the walktrap algorithm (default:10)
+p5_fileFormat=
+p5_flag=--walktrap_steps
+p5_name=walktrap_steps
+p5_numValues=0..1
+p5_optional=
+p5_prefix=
+p5_prefix_when_specified=
+p5_type=java.lang.Integer
+p5_value=
+
+#umap_distance double
+p6_MODE=
+p6_TYPE=Floating Point
+p6_default_value=0.05
+p6_description=UMAP Minimum Distance (default: 0.05)
+p6_fileFormat=
+p6_flag=--umap_distance
+p6_name=umap_distance
+p6_numValues=0..1
+p6_optional=
+p6_prefix=
+p6_prefix_when_specified=
+p6_type=java.lang.Float
+p6_value=
+
+#umap_spread double
+p7_MODE=
+p7_TYPE=Floating Point
+p7_default_value=5
+p7_description=UMAP Spread (default: 5.0)
+p7_fileFormat=
+p7_flag=--umap_spread
+p7_name=umap_spread
+p7_numValues=0..1
+p7_optional=
+p7_prefix=
+p7_prefix_when_specified=
+p7_type=java.lang.Float
+p7_value=
+
+privacy=private
+quality=development
+taskDoc=doc.html
+taskType=Clustering
+userid=edjuaro
+version=Initial version
