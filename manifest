@@ -1,7 +1,7 @@
 #Conos.Cluster
 #Wed Oct 23 18:50:29 UTC 2019
 JVMLevel=
-LSID=urn\:lsid\:8080.gpserver.ip-172-31-26-71.ip-172-31-26-71.ec2.internal\:genepatternmodules\:95\:0.9
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00410\:0.1
 author=Edwin F. Juarez & Anthony Castanza;UCSD -- Mesirov Lab
 categories=Clustering;SingleCell
 
@@ -24,7 +24,7 @@ job.memory=4Gb
 job.cpuCount=3
 
 language=R
-name=Conos.Preprocess
+name=Conos.Cluster
 os=any
 
 #conos_object file [.rds]
@@ -132,7 +132,7 @@ p7_prefix_when_specified=
 p7_type=java.lang.Float
 p7_value=
 
-privacy=private
+privacy=public
 quality=development
 taskDoc=doc.html
 taskType=Clustering
