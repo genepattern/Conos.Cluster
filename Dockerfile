@@ -16,13 +16,9 @@ RUN apt-get update --yes && apt-get install --no-install-recommends --yes \
   libssl-dev \
   libgsl0-dev \
   libeigen3-dev \
-  libssl-dev \
-  libcurl4-openssl-dev \
-  libssl-dev \
   libcairo2-dev \
   libxt-dev \
   libgtk2.0-dev \
-  libcairo2-dev \
   xvfb  \
   xauth \
   xfonts-base \
