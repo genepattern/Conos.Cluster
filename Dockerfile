@@ -44,7 +44,7 @@ RUN R -e "install.packages('conosPanel',dependencies=TRUE, repos='https://kharch
 
 RUN R -e 'devtools::install_github("kharchenkolab/leidenAlg")'
 
-RUN R -e 'devtools::install_github("kharchenkolab/conos", ref="dev")'
+RUN R -e 'devtools::install_github("kharchenkolab/conos@v1.4.3")'
 
 RUN mkdir /module
 RUN mkdir /job_1234
