@@ -1,7 +1,7 @@
 #Conos.Cluster
 #Wed Oct 23 18:50:29 UTC 2019
 JVMLevel=
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00410\:0.1
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00410\:2.0
 author=Edwin F. Juarez & Anthony Castanza;UCSD -- Mesirov Lab
 categories=Clustering;SingleCell
 
@@ -19,7 +19,7 @@ cpuType=any
 description=GenePattern Module which implements the clustering and embedding steps of Conos
 fileFormat=png;txt;rds
 
-job.docker.image=genepattern/conos\:1.2
+job.docker.image=genepattern/conos\:2.0
 job.memory=4Gb
 job.cpuCount=3
 
@@ -133,8 +133,8 @@ p7_type=java.lang.Float
 p7_value=
 
 privacy=public
-quality=development
+quality=production
 taskDoc=doc.html
 taskType=Clustering
 userid=edjuaro
-version=Initial version
+version=Upgrades on Oct 2021
