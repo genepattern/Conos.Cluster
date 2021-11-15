@@ -16,4 +16,4 @@ saveRDS(list(con=con,runleiden=runleiden,runwalktrap=runwalktrap), "conos_cluste
 print('saved conos_cluster_output.rds')
 ```
 ## Technical note:
-This module uses the Conos Docker container vpetukhov/conos:version-1.1.1 wrapped in the container genepattern/conos:2.0
+This module uses the Conos Docker container vpetukhov/conos:version-1.4.4 wrapped in the container genepattern/conos:2.1

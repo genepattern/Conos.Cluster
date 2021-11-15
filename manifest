@@ -19,7 +19,7 @@ cpuType=any
 description=GenePattern Module which implements the clustering and embedding steps of Conos
 fileFormat=png;txt;rds
 
-job.docker.image=genepattern/conos\:2.0
+job.docker.image=genepattern/conos\:2.1
 job.memory=4Gb
 job.cpuCount=3
 
