@@ -70,7 +70,7 @@ p4_value=True\=True;False\=False
 p5_MODE=
 p5_TYPE=Integer
 p5_default_value=10
-p5_description=Stepts to be taken for the walktrap algorithm (default\:10)
+p5_description=Steps to be taken for the walktrap algorithm (default\:10)
 p5_fileFormat=
 p5_flag=--walktrap_steps
 p5_name=walktrap_steps
