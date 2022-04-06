@@ -44,7 +44,8 @@ The output of the Conos.Cluster module also contains an RDS object object that c
 # Save an object to a file
 saveRDS(list(con = con, runleiden = runleiden, runwalktrap = runwalktrap, data_source = data_source), 
  "conos_cluster_output.rds")
-print("saved conos_cluster_output.rds")```
+print("saved conos_cluster_output.rds")
+```
 
 **Module Language**: R 
 
